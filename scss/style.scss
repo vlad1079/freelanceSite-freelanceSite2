@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header.header {
+  max-width: 1920px;
+  position: relative;
+  background-color: #fff;
+
+  .header_logo_block {
+    position: absolute;
+    width: 16%;
+    height: 69px;
+    background-color: #00AE9A;
+    top: 0;
+    left: 0;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.header_top {
+  max-width: 1166px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 6px;
+
+  .logo_container {
+    max-width: 183px;
+    background-image: url("../img/header/feather _1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: 3;
+
+    a.logo {
+      position: relative;
+      left: 22%;
+      color: rgba(235, 88, 88, 1);
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: capitalize;
+      font-family: 'Paytone One';
+      font-style: normal;
+      font-weight: 700;
+      z-index: 2;
+
+      span {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .header_nav {
+    position: relative;
+    max-width: 374px;
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    left: 61px;
+
+    &>li>a {
+      font-size: 14px;
+      line-height: 19px;
+      color: #000;
+    }
+  }
+
+  .header_tel_price_log {
+    display: flex;
+    column-gap: 22px;
+
+    .header_tel {
+
+      &>span:nth-of-type(1) {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        margin-top: 6px;
+      }
+      &>span:nth-of-type(2) {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      &>span {
+        display: block;
+      }
+    }
+    .header_price {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 10px;
+      border: 1px solid #EB5858;
+      border-radius: 6px;
+      background-color: #EB5858;
+      color: #fff;
+    }
+    .header_log {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      color: #EB5858;
+      border: 2px solid #EB5858;
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+  }
+}
