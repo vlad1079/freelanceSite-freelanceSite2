@@ -22,7 +22,7 @@ header.header {
 }
 header.header .header_logo_block {
   position: absolute;
-  width: 16%;
+  width: 19%;
   height: 69px;
   background-color: #00AE9A;
   top: 0;
@@ -137,4 +137,126 @@ header.header .header_logo_block {
   border: 2px solid #EB5858;
   border-radius: 6px;
   padding: 10px 14px;
+}
+
+main.main .container .main_assistance_writing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 82px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left {
+  width: 50%;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_title {
+  max-width: 788px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 35px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_title > span {
+  color: rgb(0, 174, 154);
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_content {
+  max-width: 635px;
+  font-size: 18px;
+  line-height: 25px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_content > span {
+  font-weight: 600;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_content2 {
+  max-width: 693px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 14px;
+  margin-bottom: 38px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_need {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  margin-bottom: 22px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_need .main_assistance_writing_left_need_right > p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_need .main_assistance_writing_left_need_right > p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 22px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  margin-bottom: 26px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_time .main_assistance_writing_left_time_right > p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_time .main_assistance_writing_left_time_right > p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 22px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_guarantee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  margin-bottom: 53px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_guarantee .main_assistance_writing_left_guarantee_right > p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_guarantee .main_assistance_writing_left_guarantee_right > p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 22px;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_left .main_assistance_writing_left_price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 19px 47px;
+  border-radius: 6px;
+  background-color: rgb(235, 88, 88);
+  border-color: rgb(235, 88, 88);
+}
+main.main .container .main_assistance_writing .main_assistance_writing_right {
+  position: relative;
+  width: 50%;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_right > picture {
+  width: 100%;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_right > picture:nth-of-type(4) {
+  position: absolute;
+}
+main.main .container .main_assistance_writing .main_assistance_writing_right > picture:nth-of-type(4) > img {
+  position: absolute;
+  width: 916px;
+  height: 1015px;
+  max-width: unset;
+  top: 0;
+  right: 0;
 }
