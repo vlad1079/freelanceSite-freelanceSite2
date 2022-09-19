@@ -145,7 +145,7 @@ main.main {
       padding-top: 82px;
 
       .main_assistance_writing_left {
-        width: 50%;
+        width: 54%;
 
         .main_assistance_writing_left_title {
           max-width: 788px;
@@ -183,12 +183,14 @@ main.main {
           .main_assistance_writing_left_need_right {
 
             &>p:nth-of-type(1) {
+              max-width: 117px;
               font-weight: 700;
               font-size: 16px;
               line-height: 22px;
               text-transform: uppercase;
             }
             &>p:nth-of-type(2) {
+              max-width: 559px;
               font-size: 14px;
               line-height: 22px;
             }
@@ -202,12 +204,14 @@ main.main {
 
           .main_assistance_writing_left_time_right {
             &>p:nth-of-type(1) {
+              max-width: 127px;
               font-weight: 700;
               font-size: 16px;
               line-height: 22px;
               text-transform: uppercase;
             }
             &>p:nth-of-type(2) {
+              max-width: 523px;
               font-size: 14px;
               line-height: 22px;
             }
@@ -221,12 +225,14 @@ main.main {
           .main_assistance_writing_left_guarantee_right {
 
               &>p:nth-of-type(1) {
+                max-width: 117px;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 22px;
                 text-transform: uppercase;
               }
               &>p:nth-of-type(2) {
+                max-width: 488px;
                 font-size: 14px;
                 line-height: 22px;
               }
@@ -249,29 +255,51 @@ main.main {
 
       .main_assistance_writing_right {
         position: relative;
-        width: 50%;
+        width: 46%;
+        // overflow: hidden;
         &>picture {
           width: 100%;
+          display: block;
         }
 
         &>picture:nth-of-type(1) {
+          position: relative;
 
+          &>img {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
         }
         &>picture:nth-of-type(2) {
+          position: relative;
+          &>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
 
         }
         &>picture:nth-of-type(3) {
-
-        }
-        &>picture:nth-of-type(4) {
-          position: absolute;
+          position: relative;
           &>img {
             position: absolute;
-            width: 916px;
-            height: 1015px;
-            max-width: unset;
-            top: 0;
+            top: 20vh;
             right: 0;
+          }
+        }
+        &>picture:nth-of-type(4) {
+          // position: relative;
+          // flex-grow: 1;
+          &>img {
+            // display: block;
+            // position: absolute;
+            width: 100%;
+            // height: 100%;
+            // max-width: unset;
+            // top: 0;
+            // right: 0;
+            // object-fit: contain;
           }
         }
       }
