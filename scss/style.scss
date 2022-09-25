@@ -143,6 +143,7 @@ main.main {
     .main_assistance_writing {
       display: flex;
       padding-top: 82px;
+      margin-bottom: 100px;
 
       .main_assistance_writing_left {
         width: 54%;
@@ -260,6 +261,7 @@ main.main {
         &>picture {
           width: 100%;
           display: block;
+          flex-grow: 1;
         }
 
         &>picture:nth-of-type(1) {
@@ -289,17 +291,214 @@ main.main {
           }
         }
         &>picture:nth-of-type(4) {
-          // position: relative;
+          position: relative;
+          // z-index: 1;
+          &>img {
+            position: absolute;
+            top: 16vh;
+            left: 12vw;
+            width: 14.4%;
+          }
+        }
+        &>picture:nth-of-type(5) {
+          position: relative;
+          &>img {
+            position: absolute;
+            top: 23vh;
+            right: 0;
+            width: 29%;
+          }
+        }
+        &>picture:nth-of-type(6) {
+          position: relative;
           // flex-grow: 1;
+          // z-index: 1;
           &>img {
             // display: block;
-            // position: absolute;
+            position: absolute;
             width: 100%;
+            // z-index: 1;
             // height: 100%;
-            // max-width: unset;
-            // top: 0;
-            // right: 0;
+            max-width: unset;
+            top: 0;
+            right: 0;
             // object-fit: contain;
+          }
+        }
+        &>picture:nth-of-type(7) {
+          position: relative;
+          &>img {
+            position: absolute;
+            top: 84vh;
+          left: 0;
+          }
+        }
+      }
+    }
+    .main_find_out_price {
+      padding-top: 100px;
+
+      .main_find_out_price_form {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 34px rgba(13, 23, 34, 0.1);
+        border-radius: 10px;
+        padding: 59px 35px 87px 40px;
+
+        .main_find_out_price_form_title_image {
+          display: flex;
+          column-gap: 39px;
+          margin-bottom: 40px;
+
+          .main_find_out_price_form_title {
+            display: flex;
+            column-gap: 42px;
+
+          .main_find_out_price_form_title_content {
+
+            &>h2 {
+              font-weight: 700;
+              font-size: 44px;
+              line-height: 60px;
+              text-align: center;
+
+            }
+            .main_find_out_price_form_free_plan {
+              font-size: 20px;
+              line-height: 27px;
+              span {
+                font-weight: 700;
+              }
+            }
+          }
+          }
+
+          .main_find_out_price_form_image {
+            display: flex;
+            column-gap: 39px;
+
+            &>img:nth-of-type(2) {
+              width: 20px;
+            }
+          }
+        }
+
+        .main_find_out_price_form_content {
+
+          display: flex;
+          column-gap: 35px;
+          .main_find_out_price_form_content_left {
+            .main_find_out_price_form_content_sel {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 25px 30px;
+            margin-bottom: 13px;
+            &>li>p {
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 16px;
+              text-transform: uppercase;
+              margin-bottom: 7px;
+            }
+            &>li>select {
+              width: 370px;
+              font-size: 16px;
+              line-height: 22px;
+              color: #818A92;
+              background: #FFFFFF;
+              border: 1px solid #DADBDA;
+              border-radius: 6px;
+              padding: 8px 0 10px 30px;
+              appearance: none;
+              background-image: url('../img/main/main_find_out_price/arrow1.svg');
+              background-repeat: no-repeat;
+              background-position: 95% center;
+              option {
+                padding-right: 13px;
+              }
+            }
+            }
+            .main_find_out_price_form_content_left_slider {
+              max-width: 770px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              &>p:nth-of-type(1) {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+              }
+              &>img {
+                position: relative;
+                top: 7px;
+              }
+              &>p:nth-of-type(2) {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 41px;
+                text-transform: uppercase;
+              }
+            }
+            .main_find_out_price_form_content_left_button {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: center;
+              text-transform: uppercase;
+              padding: 19px 50px;
+              color: #FFFFFF;
+              background-color: #EB5858;
+              border-radius: 6px;
+            }
+          }
+          .main_find_out_price_form_content_right {
+
+            .main_find_out_price_form_content_right_clock {
+            display: flex;
+            align-items: center;
+            column-gap: 14px;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 44px;
+            &>p>span {
+              font-weight: 600;
+            }
+            }
+
+            .main_find_out_price_form_content_right_sale {
+            display: flex;
+            align-items: center;
+            column-gap: 14px;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 54px;
+            &>p>span {
+              font-weight: 600;
+            }
+            }
+
+            .main_find_out_price_form_content_right_ptice {
+            max-width: 290px;
+            background-color: #EFF1CC;
+            padding: 32px 23px 25px 20px;
+            .main_find_out_price_form_content_right_ptice_content {
+              display: flex;
+              column-gap: 13px;
+              &>p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+              }
+            }
+            &>p {
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 54px;
+              text-align: center;
+            }
+            }
           }
         }
       }
